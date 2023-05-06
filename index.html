@@ -17,30 +17,31 @@
     <input type="number" id="employeeIDNumber" placeholder="ID Number">
     <input type="text" id="employeeJobTitle" placeholder="Job Title">
     <input type="number" id="employeeAnnualSalary" placeholder="Annual Salary">
-    <button type="button">Submit</button>
+    <button type="button" id="submitButton">Submit</button>
     </div>
     
     <h1>Employees</h1>
 
 
 
-    <table>
-        <tbody>
+    <table class="employeeData">
+    
+      <thead>
       <tr>
-        <td>First Name</td>
-        <td>Last Name</td>
-        <td>ID Number</td>
-        <td>Job Title</td>
-        <td>Annual Salary</td>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID Number</th>
+        <th>Job Title</th>
+        <th>Annual Salary</th>
+        <th>   </th>
       </tr>
-      <tr>
-        <td class="firstNameTable"></td>
-        <td class="lastNameTable"></td>
-        <td class="IDTable"></td>
-        <td class="jobTitleTable"></td>
-        <td class="annualSalaryTable"></td>
-      </tr>
-        </tbody>
-    </table>
+    </thead>
+    <tbody class = "employeeSubmit">
+
+    </tbody>
+  </table>
+
+
+  <h1>Total Monthly:</h1>
 </body>
 </html>
