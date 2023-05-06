@@ -3,14 +3,23 @@ $(onReady)
 function onReady() {
     console.log('hello');
 
-    $('#submitButton').on('click', addEmployeeData);
+    $('#submitButton').on('click', addEmployeeData)
+      
     $('.employeeSubmit').on('click', '.deleteButton', deleteButton);
+
 }
+let totalMonthly = 0;
 
-
+let firstName = $('#employeeFirstName').val();
+let lastName = $('#employeeLastName').val();
+let employeeID = $('#employeeIDNumber').val();
+let jobTitle = $('#employeeJobTitle').val();
+let annualSalary = $('#employeeAnnualSalary').val();
+    
 
 
 function addEmployeeData() {
+
     $('.employeeSubmit').append(`
     <tr>
     <td>${$("#employeeFirstName").val()}</td>
@@ -20,10 +29,29 @@ function addEmployeeData() {
     <td>${$("#employeeAnnualSalary").val()}</td>
     <td><button class="deleteButton">Delete</button></td>
     </tr>
-    `)
+
+    
+`)
+
+totalMonthly += Math.round(Number($('#employeeAnnualSalary').val()) / 12);
+
+    $('#totalMonthly').text(`Total Monthly: ${totalMonthly}`);
+
+    if (totalMonthly > 20000) {
+        $('#totalMonthly').css('color', 'red');
+    }
+
+    $('#employeeFirstName').val('');
+    $('#employeeLastName').val('');
+    $('#employeeIDNumber').val('');
+    $('#employeeJobTitle').val('');
+    $('#employeeAnnualSalary').val('');
+
 }
 
 
 function deleteButton(event) {
 $(event.target).closest('tr').remove();
 }
+
+
