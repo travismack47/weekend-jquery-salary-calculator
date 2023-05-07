@@ -40,7 +40,7 @@ function addEmployeeData() {
 
 totalMonthly += Math.round(Number($('#employeeAnnualSalary').val()) / 12);
 
-    $('#totalMonthly').text(`Total Monthly: ${totalMonthly}`);
+    $('#totalMonthly').text(`Total Monthly: $${totalMonthly}`);
 
     if (totalMonthly > 20000) {
         $('#totalMonthly').css('color', 'red');
