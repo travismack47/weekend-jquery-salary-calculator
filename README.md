@@ -16,6 +16,9 @@
 - Javascript
 - [JQuery.JS](https://jquery.com/)
 
+## Time Spent On Project
+I spent about 10-15 hours on this project, from writing the code, testing it all to see if it worked properly, getting a transparent image on the page and touching everything up making it look nice in CSS.
+
 ## Setting Up JQuery
 To set up JQuery, you first need to copy the compressed production code from their [website](https://code.jquery.com/jquery-3.6.4.min.js). After that, you will need to create a new file inside of VSCode named jquery.js or something similar. Paste the code into that file and source the file into your HTML document BEFORE the Javascript file is sourced. In your Javascript file, write $(onReady) up at the top and create a function onReady(). Inside that function, console log some text to make sure the JQuery is working properly.
 
