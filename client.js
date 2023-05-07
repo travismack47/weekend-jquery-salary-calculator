@@ -10,16 +10,21 @@ function onReady() {
 }
 let totalMonthly = 0;
 
-let firstName = $('#employeeFirstName').val();
-let lastName = $('#employeeLastName').val();
-let employeeID = $('#employeeIDNumber').val();
-let jobTitle = $('#employeeJobTitle').val();
-let annualSalary = $('#employeeAnnualSalary').val();
+
     
 
 
 function addEmployeeData() {
+    let firstName = $('#employeeFirstName').val();
+    let lastName = $('#employeeLastName').val();
+    let employeeID = $('#employeeIDNumber').val();
+    let jobTitle = $('#employeeJobTitle').val();
+    let annualSalary = $('#employeeAnnualSalary').val();
 
+    if (firstName === '' || lastName === '' || employeeID === '' || jobTitle === '' || annualSalary === '') {
+        alert('Please fill out all forms!');
+        return false;
+        }
     $('.employeeSubmit').append(`
     <tr>
     <td>${$("#employeeFirstName").val()}</td>
