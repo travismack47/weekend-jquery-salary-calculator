@@ -1,22 +1,68 @@
 table, td, th, tr {
     border: 1px solid;
     padding: 10px;
+    color: #CCF381;
 }
 
 body {
-    background-color: blanchedalmond;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    background-color: #4831D4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .deleteButton {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: red;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: inline-block;
 }
 
 
 .inputClass {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #CCF381;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid;
 }
 
 #submitButton {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    background-color: #CCF381;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#submitButton:hover {
+    opacity: 0.4;
+}
+
+.deleteButton:hover {
+    opacity: 0.4;
+}
+
+h1, h2 {
+    color: #CCF381;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 850px;
+    margin-top: 100px;
+}
+
+h2 {
+    position: relative;
+    left: 30%;
 }

@@ -52,6 +52,7 @@ totalMonthly += Math.round(Number($('#employeeAnnualSalary').val()) / 12);
     $('#employeeJobTitle').val('');
     $('#employeeAnnualSalary').val('');
 
+    
 }
 
 
